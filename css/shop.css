@@ -1,0 +1,219 @@
+@media screen and (max-width: 720px) {
+  body {
+      overflow-x: hidden;
+  }
+}
+.applyShadow {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.siomai-logo {
+    height: 45px;
+    width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .siomai-logo {
+      height: 30px;
+      width: 80%;
+  }
+}
+.intro {
+    background: linear-gradient(rgba(46, 50, 50, 0.5), #404040), url(../img/siomai_farther.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+h1,
+h2,
+h3,
+h4 {
+    color: #edac1a;
+}
+/* HEADER */
+.text-w-line h1,
+.text-w-line h2 {
+  position: relative;
+}
+.text-w-line h1::before,
+.text-w-line h1::after,
+.text-w-line h2::before,
+.text-w-line h2::after {
+  content: "";
+  width: 15px;
+  height: 2px;
+  background: #edac1a;
+  display: inline-block;
+}
+.text-w-line h1::before,
+.text-w-line h2::before {
+  margin: 0 15px 10px 0;
+}
+
+.text-w-line h1::after,
+.text-w-line h2::after {
+  margin: 0 0 10px 15px;
+}
+
+@media screen and (max-width: 720px) {
+  .intro {
+    height: fit-content !important;
+  }
+  .text-w-line h1, .text-w-line h2 {
+    font-size: 95%;
+  }
+  .intro .content {
+    padding: 13px !important;
+  }
+  h1, h2, h3, h4, h5, h6, .btn {
+    font-size: 90% !important;
+  }
+  .input-group::placeholder {
+    font-size: 13px;
+  }
+}
+/* PRODUCTS */
+.product-section {
+    background: #f4f5f8;
+}
+.siomai_container {
+    height: fit-content;
+    width: 100%;
+}
+.card-product {
+    background: #fff;
+    width: fit-content !important;
+    position: relative;
+    box-shadow: 0 0 2px #404040;
+    border-radius: 0%;
+    transition: ease-in-out .4s;
+}
+.card-product:hover {
+  transform: scale(1.025);
+}
+.card-product img {
+  height: 120px;
+  width: 200px;
+}
+.timer-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer {
+  background: #fff;
+  border: solid 1px #ccc;
+  padding: 5px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.countdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  font-size: 13px !important;
+  background: #fff !important;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-countdown img {
+  height: 170px;
+}
+.banner {
+  height: 200px;
+}
+/* CAROUSEL 2 */
+.carousel-container {
+  position: relative;
+  margin: 0 auto;
+  border: solid 1px #ccc;
+  border-radius: 10px;
+  padding: 10px;
+}
+.carousel-container .carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.carousel-container .carousel-title {
+  font-size: 15px;
+}
+.carousel-container .owl-controls {
+  font-size: 20px;
+  width: 300px;
+}
+.carousel-container .owl-controls .owl-nav button {
+  background: transparent;
+  border: none;
+  outline: none;
+  margin: 0;
+  font-size: 13px !important;
+}
+.btn-owl-controls {
+  border: solid 1px #ccc !important;
+  border-radius: 0% !important;
+}
+.carousel-container .owl-nav{
+  display: flex;
+  width: 100%;
+  justify-content: end;
+  align-items: center;
+}
+@media screen and (max-width: 720px) {
+  .card-countdown, .carousel-container {
+    transform: scale(.85) !important;
+  }
+  .siomai_container {
+    gap: 0 !important;
+  }
+  .carousel-container .card-product {
+    width: 100% !important;
+    height: 100%;
+  }
+  .products-wrapper {
+    padding: 20px !important;
+  }
+  .rightmost .col-sm-12 {
+    display: flex;
+    padding: 0 !important;
+    align-items: center;
+    justify-content: center;
+  }
+  .rightmost .card-product {
+    width: 100% !important;
+    transform: scale(.85) !important;
+    margin-left: 20px;
+  }
+}
+/* FOOTER */
+.footer {
+  background: linear-gradient(rgba(46, 50, 50, 0.5), #404040), url(../img/siomai_farther.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.footer iframe {
+  height: 300px;
+  width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .footer {
+      font-size: 90% !important;
+  }
+  .footer iframe {
+      height: 95px;
+      width: 100%;
+  }
+}
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 5px;
+  z-index: 9999;
+}

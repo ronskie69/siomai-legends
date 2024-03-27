@@ -1,0 +1,205 @@
+body {
+    overflow-x: hidden !important;
+    margin: 0 !important;
+}
+.toppings {
+    transition: all ease-in-out .4s;
+}
+.applyShadow {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+}
+.siomai-logo {
+    height: 45px;
+    width: 100%;
+}
+@media screen and (max-width: 720px) {
+    .siomai-logo {
+        height: 30px;
+        width: 80%;
+    }
+}
+.intro {
+    background: linear-gradient(rgba(46, 50, 50, 0.5), #404040), url(../img/siomai_farther.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100vw !important;
+}
+h1,
+h2,
+h4 {
+    color: #edac1a;
+}
+
+.text-shadow {
+    text-shadow: 0 0 10px #000;
+}
+.ipatong {
+    margin-top: -140px;
+}
+
+.border-me {
+    box-shadow: 0 0 5px #404040;
+    transition: ease-in-out .3s;
+    background: url('../img/blob-stacked-waves2.png');
+}
+.border-me i {
+    color: #edac1a !important;
+}
+.border-me:hover {
+    transform: translateY(-5px);
+    filter: brightness(102%);
+}
+
+@media screen and (max-width: 720px) {
+    .ipatong {
+        margin-top: 0px;
+        width: 100%;
+        font-size: .80rem !important;
+    }
+    h1, h2, h3, h4, h5, h6, .btn {
+        font-size: 90% !important;
+    }
+    .intro {
+        width: 100%;
+        margin: 0 !important;
+    }
+    .intro .content {
+        padding: 0 !important;
+    }
+}
+
+
+/* PRODUCTS SECTION */
+.product-section {
+    background: #f4f5f8;
+}
+.card-product {
+    background: #fff;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: 0 0 2px #404040;
+}
+.card-product img {
+    width: 280px !important;
+    height: 170px;
+}
+
+@media screen and (max-width: 720px) {
+    .col-md-6 {
+        display: flex;
+        justify-content: center;
+    }
+    .nav-pills a {
+        font-size: .8rem !important;
+        margin: 5px !important;
+    }
+    .card-product {
+        width: fit-content !important;
+        transform: scale(0.85) !important;
+    }
+    .card-product h4, .card-product p {
+        font-size: 90% !important;
+    }
+    .card-product .btn {
+        font-size: 85%;
+    }
+    .card-product img {
+        height: 90px !important;
+        width: 100%;
+    }
+}
+
+/* avail our ... */
+.btn-white {
+    background: #fff !important;
+}
+.avail-siomai {
+    background: #edac1a;
+    height: fit-content;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0);
+    } to {
+        transform: rotate(-40deg);
+    }
+}
+.spinning-img {
+    animation: spin infinite alternate 18s;
+}
+
+@media screen and (max-width: 720px) {
+    .avail-siomai {
+        height: 100%;
+        width: 100%;
+        font-size: 90% !important;
+    }
+    .avail-siomai .btn {
+        font-size: 85% !important;
+    }
+    .spinning-img {
+        height: 195px;
+        width: 120px;
+    }
+}
+
+/* BANNER */
+@media screen and (max-width: 720px) {
+    .bannerx {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        gap: 14px;
+        text-align: center;
+        flex-direction: column;
+    }
+}
+
+/* TESTIMONIAL ITEMS */
+#testimonials{
+    background: #f4f5f8;
+}
+.testimonial-item {
+    border-radius: 20px;
+    background: #fff;
+}
+@media screen and (max-width: 720px) {
+    .testimonial-item {
+        font-size: 90% !important;
+    }
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(rgba(46, 50, 50, 0.5), #404040), url(../img/siomai_farther.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer iframe {
+    height: 300px;
+    width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+    .footer {
+        font-size: 90% !important;
+    }
+    .footer iframe {
+        height: 95px;
+        width: 100%;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 5px;
+    z-index: 9999;
+}
