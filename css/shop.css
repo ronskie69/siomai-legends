@@ -134,7 +134,7 @@ h4 {
   border-radius: 10px;
   padding: 10px;
 }
-.carousel-container .card-product {
+.carousel-container .owl-carousel .card-product {
   width: 100% !important;
 }
 .carousel-container .carousel-header {
