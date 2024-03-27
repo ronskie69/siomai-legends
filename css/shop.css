@@ -164,6 +164,9 @@ h4 {
   justify-content: end;
   align-items: center;
 }
+.rightmost .card-product {
+  width: 100% !important;
+}
 @media screen and (max-width: 720px) {
   .card-countdown, .carousel-container {
     transform: scale(.85) !important;
