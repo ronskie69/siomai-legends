@@ -134,6 +134,9 @@ h4 {
   border-radius: 10px;
   padding: 10px;
 }
+.carousel-container .card-product {
+  width: 100%;
+}
 .carousel-container .carousel-header {
   display: flex;
   justify-content: space-between;
